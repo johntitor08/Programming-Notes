@@ -1,0 +1,19 @@
+Props, short for properties, are a mechanism for passing data from parent to child components. They allow the parent component to communicate with its children by passing information as props, which are essentially attributes.
+
+Definition of Prop Drilling:
+Prop drilling is a fundamental concept in React that involves passing data down through nested components in a React application. It plays a crucial role in maintaining communication between parent and child components within the component tree.
+
+Prop drilling becomes necessary in scenarios where data needs to be shared across multiple levels of components within the hierarchy. As components become more deeply nested, passing props directly can become challenging.
+
+The ParentComponent maintains a piece of data in its state and renders ChildComponent, passing the data as a prop. ChildComponent, in turn, passes the received data prop to GrandchildComponent, ensuring the seamless flow of data through the component hierarchy for rendering.
+
+Alternate for Props Drilling:
+
+1) Context API:
+The React Context API serves as an alternative to prop drilling. It provides a way to share values, such as themes or authentication state, across the component tree without explicitly passing props through each level.
+
+2) Redux:
+Redux is another alternative for managing state in React applications. It eliminates the need for prop drilling by centralizing the state and making it accessible to any component that needs it.
+
+Source link:
+https://medium.com/@omkarbhavare2406/prop-drilling-in-react-8819c609c376.

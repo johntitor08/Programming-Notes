@@ -1,0 +1,9 @@
+Flex Align Center:
+The CSS properties "display: flex;", "align-items: center;" and "justify-content: center;" are used together to center a flex item both horizontally and vertically within its container.
+
+Setting "display: flex;" on a container makes its children flex items, enabling the use of flexbox alignment properties.
+The "justify-content: center;" property aligns the flex items along the main axis (which is horizontal by default when flex-direction is row).
+The "align-items: center;" property aligns the flex items along the cross axis (which is vertical by default when flex-direction is row). Together, these properties ensure the flex item is perfectly centered within the container.
+
+This combination is a common solution for achieving perfect centering in web layouts.
+The alignment behavior can change based on the flex-direction value; for example, if flex-direction is set to column, justify-content would control vertical placement and align-items would control horizontal placement.

@@ -1,0 +1,13 @@
+Dynamic Memory Allocation in C:
+
+Dynamic memory allocation in C refers to the process of manually managing memory during program execution using functions from the C standard library, primarily defined in the <stdlib.h> header file. This allows memory to be allocated and deallocated at runtime, providing flexibility for handling data of varying sizes, unlike static allocation which occurs at compile time  The key functions involved are malloc(), calloc(), realloc(), and free().
+
+The malloc() function allocates a single block of contiguous memory of a specified size in bytes and returns a void pointer, which can be cast to the desired data type. For example, to allocate memory for an array of 10 integers, one would use `int* a = (int*)malloc(10 * sizeof(int));`. It is essential to check if the returned pointer is NULL, as malloc() returns NULL if the allocation fails due to insufficient memory.
+
+The calloc() function allocates memory for an array of elements and initializes all bytes to zero, making it suitable for arrays and structures where initialization is required. It takes two parameters: The number of elements and the size of each element. In contrast to malloc(), which leaves the allocated memory uninitialized (containing garbage values), calloc() ensures a clean slate.
+
+The realloc() function adjusts the size of a previously allocated memory block, potentially moving it to a new location if necessary. It accepts a pointer to the existing block and the new size in bytes, returning a pointer to the resized block or NULL if the operation fails. This is useful when the required memory size changes during program execution, such as expanding or shrinking an array.
+
+Finally, the free() function releases a block of dynamically allocated memory back to the system, making it available for future allocations  It is crucial to call free() when memory is no longer needed to prevent memory leaks, which occur when allocated memory is not properly released, leading to gradual consumption of available memory and potential program instability. A memory leak can result in degraded performance or crashes over time.
+
+Dynamic memory allocation is particularly useful when the size of data structures is unknown at compile time or when the program needs to manage large amounts of data efficiently. It enables functions to return pointers to allocated memory, as the memory remains valid even after the function call ends, unlike stack-allocated variables. However, improper use of these functions, such as failing to check for NULL returns or freeing memory multiple times, can lead to undefined behavior or program crashes.

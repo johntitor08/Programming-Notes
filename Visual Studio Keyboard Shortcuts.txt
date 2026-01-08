@@ -1,0 +1,6 @@
+Visual Studio Keyboard Shortcuts:
+1) Alt + Up/Down -> Move a line of code up or down.
+2) Ctrl + R, Ctrl + M -> Extract selected lines to new method.
+3) Ctrl + K, Ctrl + C/U - Comment/uncomment a line of code.
+4) Ctrl + K, Ctrl + S -> Surround selected lines with if statements.
+5) Ctrl + K, Ctrl + D -> Clean code formatting.

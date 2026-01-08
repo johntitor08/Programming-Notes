@@ -1,0 +1,19 @@
+local leaderboard = {}
+
+function add_score(name, score)
+  leaderboard[name] = score
+end
+
+function get_leaderboard()
+  -- sort the leaderboard by score
+  local sorted_leaderboard = {}
+  for name, score in pairs(leaderboard) do
+    table.insert(sorted_leaderboard, {name = name, score = score})
+  end
+  table.sort(sorted_leaderboard, function(a, b) return a.score > b.score end)
+
+  -- return the sorted leaderboard
+  return sorted_leaderboard
+end
+
+--This implementation uses a Lua table leaderboard to store the scores, where the keys are the player names and the values are their scores. The add_score function adds a new score to the leaderboard, while the get_leaderboard function sorts the leaderboard by score and returns the sorted list.

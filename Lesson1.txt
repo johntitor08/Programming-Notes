@@ -1,0 +1,35 @@
+# names = {"Ali", "Demir", "Ahmet", "Engin", "Salih"}
+# grades = {"45.2", "24.5", "64.3", "32.7", "12.3"}
+# print(names, grades)
+
+# grades = []
+# num = float(input("Enter the first grade:"))
+# grades.append(num)
+# num = float(input("Enter the second grade:"))
+# grades.append(num)
+# num = float(input("Enter the third grade:"))
+# grades.append(num)
+# num = float(input("Enter the fourth grade:"))
+# grades.append(num)
+# num = float(input("Enter the fifth grade:"))
+# grades.append(num)
+
+# minGrade = min(grades)
+# grades.remove(minGrade)
+# minGrade = min(grades)
+# grades.remove(minGrade)
+# average = sum(grades) / len(grades)
+# print("Average grade: {0: .2f}".format(average))
+
+list1 = ['a', 'b', 'c', 'd', 'e', 'f']
+
+print(list1[1:3])
+
+# line = ["To", "be", "or", "not", "to", "be."]
+# print(" ".join(line))
+
+# str = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra odio metus, et cursus nibh euismod in. In at orci euismod, lobortis nisl at, efficitur dolor. Pellentesque vehicula orci sed urna sagittis elementum. Mauris placerat metus nec nunc viverra, non euismod metus pulvinar. Maecenas vitae hendrerit nisl, et blandit nibh. Praesent gravida enim et tortor luctus, nec ullamcorper lorem accumsan. Nam enim ex, suscipit in velit non, pulvinar condimentum urna. Maecenas eros mi, mattis eget libero non, posuere porttitor erat. Phasellus sodales luctus enim, quis luctus orci mollis id. Vestibulum libero elit, efficitur a lacus id, rhoncus sollicitudin dui. Nunc at sagittis elit, vitae vulputate urna. Praesent urna mauris, suscipit tristique congue condimentum, lacinia vel velit. Phasellus non magna arcu. In hac habitasse platea dictumst.")
+
+# arr = str.split()
+
+# print(arr)

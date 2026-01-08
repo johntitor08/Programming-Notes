@@ -1,0 +1,3 @@
+The root is like the user's name or system administrator account in Linux. The root account provides complete system control, which an ordinary user cannot do.
+CLI, i.e., command line interface. It takes input as a command and runs the tasks of the system. The term GUI refers to the Graphical User Interface or the human-computer interface. It uses icons, images, menus, and windows, which can be manipulated through the mouse.
+Linux uses swap space to expand RAM. Linux uses this extra space to hold concurrently running programs temporarily.

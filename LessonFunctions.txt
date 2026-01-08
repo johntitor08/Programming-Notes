@@ -1,0 +1,106 @@
+#Example 1:
+
+
+def fahrenheitToCelcius(t):
+    convertedTemperature = (5/9) * (t-32)
+    return convertedTemperature
+    
+fahrenheitTemp = eval(input("Enter a temperature degrees in Fahrenheit :"))
+celciusTemp = fahrenheitToCelcius(fahrenheitTemp)
+print("Celcius equivalent: ", celciusTemp, "degrees")
+
+
+
+#Example 2:
+
+
+def firstName(fullName):
+    firstSpace = fullName.index(" ")
+    #firstSpace = fullName.rfind(" ") //reverse
+    #firstSpace = fullName.rindex(" ") //reverse
+    givenName = fullName[:firstSpace]
+    return givenName
+    
+fullName = input("Enter a person's full name: ")
+print("First name:", firstName(fullName))
+
+
+
+#Example 3:
+
+
+def triple(num):
+    num = 3 * num
+    return num
+    
+num = 2
+print(triple(num))
+print(num)
+
+
+
+#Example 4:
+
+
+def pay(wage, hours):
+    if hours <= 40:
+        amount = wage * hours
+    else:
+        amount = (wage * 40) + ((1.5) * wage * (hours - 40))
+    return amount
+    
+hourlyWage = eval(input("Enter the hourly wage: "))
+hoursWorked = eval(input("Enter the number of hours worked: "))
+print("Earnings: ${0:,.2f}".format(pay(hourlyWage, hoursWorked)))
+
+
+
+#Practice 1:
+
+
+def total(w, x, y=10, z=20):
+    return (w ** x) + y + z
+   
+
+print(total(w=2, x=3))
+
+
+def main():
+    list1 = ["democratic", "sequoia", "equals", "brrr", "break", "two", "2"]
+
+    list1.sort(key=len)
+    print("Sorted by length in ascending order:")
+    print(list1, '\n')
+    
+    list1.sort(key=lastCharacter)
+    print("Sorted by last character in ascending order:")
+    print(list1, '\n')
+    
+    list1.sort(key=numberOfVowels, reverse=True)
+    print("Sorted by number of vowels in descending order:")
+    print(list1)
+
+
+def lastCharacter(word):
+    return word[-1]
+
+
+def numberOfVowels(word):
+    counter = 0
+    for char in word:
+        vowels = ['a', 'e', 'i', 'u', 'o']
+        if char in vowels:
+            counter += 1
+    
+    return counter
+    
+
+main()
+
+
+names = ["Dennis Ritchie", "Alan Kay", "John Backus", "James Gosling"]
+names.sort(key=lambda name: name.split()[-1])
+nameString = ", ".join(names)
+print(nameString)
+
+

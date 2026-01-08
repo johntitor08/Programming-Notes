@@ -1,0 +1,33 @@
+HTML is the standard markup language for creating Web pages.
+
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
+The <html> element is the root element of an HTML page.
+The <head> element contains meta information about the HTML page.
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading.
+The <p> element defines a paragraph.
+
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+
+The elements that are all valid table elements in HTML are: table, tr, th, td, thead, tbody, and tfoot. These elements are used to structure and organize data within a table. The table element defines the entire table, tr defines a table row, th defines a table header cell, td defines a table data cell, thead groups the header content, tbody groups the body content, and tfoot groups the footer content.
+
+The HTML <form> Elements:
+<input>, <label>, <select>, <textarea>, <button>, <fieldset>, <legend>, <datalist>, <output>, <option>, <optgroup>.
+
+HTML Input Types:
+<input type="button">, <input type="checkbox">, <input type="color">, <input type="date">, <input type="datetime-local">, <input type="email">, <input type="file">, <input type="hidden">, <input type="image">, <input type="month">, <input type="number">, <input type="password">, <input type="radio">, <input type="range">, <input type="reset">,<input type="search">, <input type="submit">, <input type="tel">, <input type="text">, <input type="time">, <input type="url">, <input type="week">.
+Tip: The default value of the type attribute is "text".
+
+With web storage, applications can store data locally within the user's browser.
+Web storage provides two objects for storing data in the browser:
+window.localStorage - stores data with no expiration date (data is not lost when the browser tab is closed).
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed).
+The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session! The data is deleted when the user closes the specific browser tab.
+
+A block-level element always starts on a new line and takes up the full width available.
+An inline element does not start on a new line and it only takes up as much width as necessary.
+The <div> element is a block-level element and is often used as a container for other HTML elements.
+The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+
+The HTML <form> element supports the <input> element to enable the user to enter data. The <input> has a type property that specifies the type of the input and how it should be displayed; as a number, a text box, a radio button, a check box, a button, and so on.

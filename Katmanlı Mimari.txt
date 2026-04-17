@@ -1,0 +1,4 @@
+Katmanlı Mimari (CSR):
+Controller: Client tarafından gelen isteği karşılayan katmandır.
+Service: Verileri kontrol eden ve belirli kriterlere göre filtreleyen katmandır.
+Repository: Veri tabanına erişim katmanıdır.

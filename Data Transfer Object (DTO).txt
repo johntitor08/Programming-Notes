@@ -1,0 +1,24 @@
+DTO (Data Transfer Object), yazılım geliştirmede farklı katmanlar veya sistemler arasında veri transferini sağlamak için kullanılan bir tasarım desenidir. Genellikle istemci (client) uygulamaları ile sunucu (server) arasındaki iletişimde veri taşıma işlevi görür.
+
+DTO’lar, özellikle API tabanlı uygulamalarda verilerin düzenli, güvenli ve verimli bir şekilde taşınmasını sağlar.
+
+DTO’ların Temel Amaçları:
+1- Veri Transferini Kolaylaştırma: DTO’lar, farklı sistemler veya katmanlar arasında veri taşıma işlemi için kullanılır. Örneğin, bir istemci uygulamasının sunucudan veri alması veya sunucuya veri göndermesi gerektiğinde, DTO’lar veri transferini etkin ve düzenli bir şekilde gerçekleştirir.
+
+2- Güvenlik Sağlama: Veritabanı tablolarını temsil eden Entity sınıflarını doğrudan istemcilere açmak güvenlik riskleri oluşturabilir. DTO’lar, yalnızca gerekli verilerin istemcilere gönderilmesini sağlayarak, gereksiz veya hassas bilgilerin dışarıya çıkmasını engeller. Bu sayede gizlilik ve güvenlik sağlanmış olur.
+
+3- Bağımlılığı Azaltma: DTO’lar, yazılım sistemlerinde katmanlar arasında bağımlılığı azaltmaya yardımcı olur. Veritabanı varlıkları (entity) doğrudan iş mantığı katmanına geçirilmez. Bunun yerine DTO’lar kullanılarak katmanlar arasındaki bağımlılıkları en aza indirgenmiş olur. Bu, yazılımın daha sürdürülebilir ve esnek olmasını sağlar.
+
+4- Gereksiz Veriden Kaçınma: Entity sınıflarında, istemciye gönderilmesi gerekmeyen alanlar olabilir. Örneğin, createdAt, updatedBy gibi log benzeri bilgiler, istemciye gönderilmesi gerekmeyen detaylardır. DTO’lar, yalnızca istemcinin ihtiyaç duyduğu verileri içeren bir yapı oluşturur, böylece gereksiz veri transferinden kaçınılmış olur.
+
+5- Esneklik Sağlama: DTO kullanımı, veri modellerindeki değişikliklerin istemci uygulamalarını etkilemeden yapılmasına olanak tanır. Örneğin, entity sınıfına yeni bir alan eklendiğinde, bu değişiklik DTO’yu etkilemeden yapılabilir. Bu da yazılımın esnekliğini artırır.
+
+DTO Örneği - Müşteri Bilgileri:
+Bir müşteri yönetim uygulamasında müşteri bilgilerini tutan bir Customer entity sınıfı düşünelim. Bu entity’de, id, firstname, lastname, email, fathername, mothername, address, phone gibi alanlar yer alabilir. Ancak istemciye yalnızca id, firstname, lastname, email gibi bilgileri göndermek isteyebiliriz. Bu durumda, CustomerDto sınıfı oluşturarak yalnızca bu gerekli alanları içeren bir veri yapısı elde edebiliriz.
+
+Entity-DTO Dönüşümü:
+Entity sınıflarından DTO’ya veri dönüştürmek için çeşitli yöntemler kullanılabilir. Bu dönüşümün manuel yapılması mümkün olmakla birlikte, büyük projelerde zaman alıcı ve hata yapma riskini artırır. Bu nedenle, genellikle şu yöntemler tercih edilir:
+
+Manuel Dönüşüm: Elle, her bir alan tek tek kopyalanarak dönüşüm yapılabilir. Ancak bu yöntem, karmaşık projelerde pratik olmayabilir. Kütüphane Kullanımı: Entity ve DTO arasında dönüşümü kolaylaştıran araçlar bulunmaktadır. ModelMapper, MapStruct, Dozer, Jmapper, Orika gibi kütüphaneler, otomatik dönüşüm işlemini sağlar ve kodun daha temiz ve anlaşılır olmasına yardımcı olur.
+
+Sonuç: DTO’lar, veri transferini güvenli, düzenli ve esnek hale getiren önemli bir yazılım tasarım desenidir. API tabanlı geliştirmelerde sıklıkla kullanılır ve katmanlar arasındaki bağımlılığı azaltarak kodun daha sürdürülebilir olmasına katkı sağlar. DTO’lar sayesinde sadece gereksiz veri transferinden kaçınılmaz ve sistemler arasında daha etkili bir veri iletimi sağlanabilir. DTO’ların kullanımının yazılım geliştirme sürecine sağladığı avantajlar göz önünde bulundurulduğunda, yazılım projelerinde veri güvenliği, esneklik ve verimlilik için çok önemli bir rol oynadığını söylemek mümkündür.

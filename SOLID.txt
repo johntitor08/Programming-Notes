@@ -1,0 +1,10 @@
+1) Single Responsibility Principle:
+“Bir sınıfın sadece tek bir sorumluluğu olmalı.”
+2) Open/Closed Principle:
+“Sınıflar genişletmeye açık, değiştirmeye kapalı olmalı.”
+3) Liskov Substitution Principle:
+“Bir sınıfın türevi, temel sınıfın yerine geçebilmelidir.”
+4) Interface Segregation Principle:
+“Bir sınıf, kullanmadığı metotları içeren interface’i implement etmek zorunda kalmamalı.”
+5) Dependency Inversion Principle:
+“Üst seviye sınıflar, alt seviye sınıflara bağımlı olmamalı. İkisi de abstraction’a bağımlı olmalı.”

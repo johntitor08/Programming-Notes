@@ -1,0 +1,19 @@
+DOCTYPE deklarasyonu, tarayıcıya kullanılması gereken HTML sürümünü belirtir ve şeklinde yazılarak dosyanın en başına, diğer tüm etiketlerden önce konulmalıdır; bu, sayfanın modern standart modda (standards mode) doğru render edilmesini sağlar. 
+
+HTML etiketi belgenin kök elemanıdır ve lang özniteliği ile sayfanın dilini belirtmek gerekir (lang="tr"), bu da erişilebilirlik araçlarının (örneğin ekran okuyucuların) metni doğru telaffuz etmesini sağlar. 
+
+HEAD bölümü, sayfanın insanlara görünen içeriğinden ziyade makine işleme için gereken meta verileri barındırır; bu bölümde meta charset="UTF-8" etiketi, karakter kodlamasını tanımlayarak özel sembollerin ve farklı dillerin doğru görüntülenmesini garanti eder. 
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Sayfa</title>
+</head>
+<body>
+    <!-- Görünür içerik buraya -->
+</body>
+</html>
+
+Bu temel yapı, sayfanın tarayıcı tarafından tutarlı bir şekilde işlenmesini ve viewport meta etiketi sayesinde duyarlı (responsive) tasarımların düzgün çalışmasını sağlar.

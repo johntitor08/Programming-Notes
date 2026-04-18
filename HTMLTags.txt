@@ -1,0 +1,52 @@
+En Çok Kullanılan HTML Etiketleri
+
+Etiket Adı - Açıklaması
+
+<!-- .. --> - HTML yorum satırı
+<!DOCTYPE html> - Belgenin türünü belirlemek için kullanılır. Belgenin en üstünde bulunması gerekir.
+<html> - HTML belgesinin kapsayıcı kök elemanını tanımlar.
+<head> - Sayfanın meta verilerini ve diğer ek bilgilerini içerir. <html> etiketinden sonra yazılır.
+<meta> - Bir HTML belgesi hakkında meta verileri tanımlar. Genllikle <head>alanı içerisinde yazılır
+<link> - Bir HTML belgesine bir harici kaynak bağlamak için kullanılır. Genellikle bir stil belgesi eklemek için kullanılır ve <head>alanı içerisinde yazılır
+<body> - Belgenin gövdesini oluşturmak için <head> </head> alanından sonra kullanılır.
+<a> - Köprü metin linkini tanımlar.
+<abbr> - Kısaltma Tanımlar title="Uzun İsmi" şeklinde öznitelik eklenir.
+<address> - Sayfanın sahibi için iletişim bilgilerini belirtir.
+<article> - Makalenin içeriğini ya da sayfanın içeriğini belirtmek için kapsayıcı olarak kullanılır.
+<aside> - Sayfanın içeriği dışındaki diğer yan taraf içeriklerini belirlemek için kullanılır.
+<audio> - Gömülü Ses dosyasını belirtmek için.
+<b> - Bold/kalın metin belirtmek için.
+<blockquote> - Başka bir kaynaktan ya da bir kişiden alıntı yapmak ve atıfta bulunmak için kullanılır.
+<div> - Sayfadaki bölümleri ve kutucukları belirlemek için kullanılır.
+<h1..h6> - Başlık ve alt başlık etiketlerini tanımlar
+<p> - HTML sayfasındaki paragrafları tanımlar.
+<em> - Vurgulanmış metni belirtmek için kullanılır.
+<strong> - Önemli metni ya da hedef anahtar kelimeyi tanımlar.
+<code> - Kod metin gösterimini belirtmek için kullanılır
+<header> - Sayfanın üst içeriğini ya da üst barı göstermek için kullanılır
+<footer> - Sayfanın alt içeriğini ya da alt barı göstermek için kullanılır
+<section> - HTML sayfasındaki ayrı bir bölümü belirtmek için kullanılır.
+<main> - Sayfadaki ana içeriği belirtmek için kullanılır.
+<figure> - Müstakil, bağımsız içeriği belirtmek için kullanılır
+<figacaption> - <figure> öğesine başlık metni için kullanılır.
+<hr> - İçerikte bir ayıraç ve tematik değişikliği belirtmek için kullanılır.
+<br> - İçeriğin ve metnin bir alt satırdan devam etmesi için kullanılır.
+<i> - Metnin istenen bölümünü düz yazıdan ayırır ve italik olarak belirtir. İcon-font eklenmesinde de bu etiket kullanılabilir.
+<img> - Resim içeriğini ve dosyasını tanımlar src="" ile resim yolu çağırılır, alt="Resim Başlığı" özniteliği ile de resim adı yazılır.
+<form> - Kullanıcı için bir giriş formu tanımlar.
+<input> - Form üzerinde bir giriş kontrolü tanımlar.
+<label> - <input> elemanı için bir etiket tanımlar.
+<select> - Form içerisinde açılır liste elemanlarını tanımlar.
+<optgroup> - Açılır listede ilgili içeriğin bir grubunu tanımlar
+<option> - Açılır listede bir seçenek tanımlamak için kullanılır.
+<textarea> - Multi-line/çok satırlı kullanıcı giriş bilgisi tanımlamak için kullanılır.
+<button> - Tıklanabilir bir buton tanımlamak için kullanılır.
+<table> - Sayfaya tablo eklemek için kullanılır.
+<thead> - Tablonun üst içeriğini eklemek için kullanılır.
+<tbody> - Tablonun gövde grup içeriklerini eklemek için kullanılır.
+<tr> - <table> içerisindeki bir satırı belirtmek için kullanılır.
+<td> - Tablo satırındaki her bir hücreyi belirlemek için kullanılır.
+<tfoot> - Tablonun alt kısmını eklemek için kullanılabilir.
+<ul> - Numaralandırılmamış/sıralanmamış bir liste oluşturmak için kullanılır.
+<ol> - Sıralı bir liste tanımlar.
+<li> - <ul>, <ol> liste elemanları içerisinde bir liste öğesini tanımlamak için kullanılır.
